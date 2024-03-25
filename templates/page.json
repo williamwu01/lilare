@@ -1,7 +1,109 @@
 {
   "sections": {
+    "collapsible_content_e9Byea": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_MNiEMB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "1. What materials are used in your jewelry?",
+            "icon": "heart",
+            "row_content": "<ul><li>We use a variety of high-quality materials, including plated brass, 925 silver, and plated silver! Each product description provides detailed information about the materials used.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LxRMb9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "are your products hypoallergenic?",
+            "icon": "heart",
+            "row_content": "<p>Yes, our jewelry is designed with sensitivity in mind. We use hypoallergenic materials like the ones listed above to minimize the risk of allergies or skin reactions. If you have specific concerns, please check the product details or contact our customer support!<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rnWbyh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "how can I care for my jewelry to ensure its longevity?",
+            "icon": "heart",
+            "row_content": "<p>To keep your jewelry looking its best, avoid exposure to moisture, perfumes, and chemicals. Store it in a dry and cool place when not in use. For more detailed care instructions, please refer to our care guide under every product!<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RJLPUz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "are your products ethically sourced?",
+            "icon": "heart",
+            "row_content": "<ul><li>We are committed to ethical and responsible sourcing. Our materials are sourced from reputable suppliers who adhere to ethical and sustainable practices. <\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XdqF3F": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "what is your return policy?",
+            "icon": "heart",
+            "row_content": "<p>We want you to be completely satisfied with your purchase. If you're not happy with your order, you may return it within [14] days of receiving it. Please review our detailed<a href=\"https:\/\/liliare.com\/policies\/refund-policy\" title=\"Refund Policy\">[return policy]<\/a>for more information<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mFEYpU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "how do I track my order?",
+            "icon": "heart",
+            "row_content": "<ul><li>Once your order is shipped, you will receive a confirmation email with a tracking number. You can use this number to track your order on our [tracking page].<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_m8jtdW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "can I change or cancel my order after placing it?",
+            "icon": "heart",
+            "row_content": "<p>We strive to process orders quickly. If you need to make changes or cancel your order, please contact our customer support as soon as possible. Once an order is shipped, changes are not possible<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_aPgJmc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "contact us",
+            "icon": "heart",
+            "row_content": "<p>You can reach our customer support team through contact@liliare.com. We typically respond within a day during our business hours. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_MNiEMB",
+        "collapsible_row_LxRMb9",
+        "collapsible_row_rnWbyh",
+        "collapsible_row_RJLPUz",
+        "collapsible_row_XdqF3F",
+        "collapsible_row_mFEYpU",
+        "collapsible_row_m8jtdW",
+        "collapsible_row_aPgJmc"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -9,6 +111,7 @@
     }
   },
   "order": [
+    "collapsible_content_e9Byea",
     "main"
   ]
 }
