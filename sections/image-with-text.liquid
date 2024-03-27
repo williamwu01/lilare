@@ -6,11 +6,42 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .image-with-text__grid  {
+    position: relative;
+  }
+
+  .why-liliare-text {
+    background-color: #ce6a85;
+    padding: 0;
+    z-index: 10;
+  }
+
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+    .image-with-text__grid  {
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .why-liliare-image {
+  flex: 0 0 80%; /* Takes 75% of the width */
+  max-width: 40%;
+  overflow: hidden;
+  max-height: 700px;
+  }
+
+  .why-liliare-text {
+    position: absolute;
+    left: -25rem;
+    min-width: 35rem;
+    flex: 0 0 40%; /* Takes 75% of the width */
+  }
   }
 {%- endstyle -%}
 
@@ -28,7 +59,7 @@
   <div class="page-width">
     <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
-        <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+        <div class="why-liliare-image image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
           <div
             class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}"
             {% if section.settings.height == 'adapt' and section.settings.image != blank %}
@@ -59,7 +90,7 @@
             {%- endif -%}
           </div>
         </div>
-        <div class="image-with-text__text-item grid__item">
+        <div class="why-liliare-text image-with-text__text-item grid__item">
           <div
             id="ImageWithText--{{ section.id }}"
             class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
